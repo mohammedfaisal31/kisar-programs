@@ -167,7 +167,7 @@ const Page6 = () => {
           </tr>
         </tbody>
       </table>
-      <div className="coordinators">Hall Coordinators : Dr. Sneha J | Dr. Smrithi D Nayak</div>
+      <div className="coordinators">Hall Coordinators : Dr. Narmatha Elango | Dr. Gayathri Uttur</div>
       <div className="nav-btns">
         <Link to="/5">
           <button className="arrow-button">&larr;</button>
