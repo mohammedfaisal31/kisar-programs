@@ -1,186 +1,25 @@
-import React from 'react';
-import '../App.css'; // Ensure you have this CSS file for custom styles
-import { Link } from 'react-router-dom';
-
-const scheduleDataDay = [
-  { time: "8:00 - 9:00 AM",
- session: "Free Papers",
-  speaker: "Free Papers" 
-},
-  {
-    time: "9:00 - 10:20 AM",
-    session: "Session 3: Gynaec leading to infertility",
-    speaker: "Chairperson: Dr Shilpa Reddy, Dr Chinmayee, Dr Sneha J"
-  },
-  {
-    time: "9:00 - 9:20 AM",
-    session: "Change in Diagnostic criteria over time in PCOS.",
-    speaker: "Dr Sheela Balakrishnan"
-  },
-  {
-    time: "9:20 - 9:40 AM",
-    session: "Pretreatment to MAR in PCOS",
-    speaker: "Dr Radha Vembhu"
-  },
-  {
-    time: "9:40 - 10:00 AM",
-    session: "Critical analysis of ART in endometriosis",
-    speaker: "Dr Dhanabhaagyam"
-  },
-  {
-    time: "10:00 - 10:20 AM",
-    session: "Discussion",
-    speaker: "Discussion"
-  },
-  {
-    time: "10:20 - 10:35 AM",
-    session: "TEA BREAK",
-    speaker: "TEA BREAK"
-  },
-  {
-    time: "10:35 - 1:00 PM",
-    session: "Session 4: Uterus - The Sanctum Santorum",
-    speaker: "Chairpersons: Dr Chaitra, Dr Shalini, Dr Geeta Uttur"
-  },
-  {
-    time: "10:35 - 10:55 AM",
-    session: "Isthmocoele: A new cause of infertility",
-    speaker: "Dr Surakshit Batina"
-  },
-  {
-    time: "10:55 - 11:15 AM",
-    session: "ERA: is it bygone?",
-    speaker: "Dr Padmaja"
-  },
-  {
-    time: "11:15 - 11:35 AM",
-    session: "Microbiome: Does it help in implantation",
-    speaker: "Dr Asha Baxi"
-  },
-  {
-    time: "11:35 - 11:55 AM",
-    session: "PGT-A Use and abuse",
-    speaker: "Dr Devika Gunasheela"
-  },
-  {
-    time: "11:55 - 12:00 AM",
-    session: "Discussion",
-    speaker: "Discussion"
-  },
-  {
-    time: "12:00 - 1:00 PM",
-    session: "ISAR Presidential Oration: 'Tic-Toc Y: Cracking the Code of paternal ageing' Dr Ameet Patki",
-    speaker: "Chairpersons: Dr Manjunath C S, Dr Nivedita Shetty, Dr Ashwini G B"
-  },
-  {
-    time: "1:00 - 1:40 PM",
-    session: "LUNCH",
-    speaker: "LUNCH"
-  },
-  {
-    time: "1:40 - 2:10 PM",
-    session: "Session 5",
-    speaker: "Chairpersons: Dr Anupama Gadag, Dr Sushma V Shivanagutti"
-  },
-  {
-    time: "1:40 - 2:10 PM",
-    session: "Keynote address: What are the factors which affects cycle to cycle variability in quantity and quality of oocytes during IVF cycle?",
-    speaker: "Dr Rama Raju"
-  },
-  {
-    time: "2:10 - 2:40 PM",
-    session: "Keynote address: ESET in patients <35 years & >35 years in Indian scenarios",
-    speaker: "Dr K U Kumjimoideen"
-  },
-  {
-    time: "2:40 - 3:10 PM",
-    session: "Keynote address: Impact of endometriosis and its surgery on embryo quality",
-    speaker: "Dr Sujata Kar"
-  },
-  {
-    time: "3:10 - 3:50 PM",
-    session: "Session 6",
-    speaker: "Chairpersons: Dr Shilpa Haresh, Dr Sneha Santosh"
-  },
-  {
-    time: "3:10 - 3:25 PM",
-    session: "Debate: Extensive hormonal monitoring of IVF cycle increases outcomes",
-    speaker: "For: Dr Rupa Rajashekhar"
-  },
-  {
-    time: "3:25 - 3:40 PM",
-    session: "Against: Dr Apoorva Pallam Reddy",
-    speaker: "Against: Dr Apoorva Pallam Reddy"
-  },
-  {
-    time: "3:40 - 3:50 PM",
-    session: "Expert Comment",
-    speaker: "Dr Prashant Joshi"
-  },
-  {
-    time: "3:50 - 4:20 PM",
-    session: "Keynote address: Clinical and Laboratory Parameters affecting the euploidy rate",
-    speaker: "Dr Nivedita Shetty"
-  },
-  {
-    time: "4:20 - 5:00 PM",
-    session: "Session 7",
-    speaker: "Dr Dwarakanath, Dr Rubeena Zainab"
-  },
-  {
-    time: "4:20 - 4:35 PM",
-    session: "Debate: Natural/Modified natural FET protocol is better than HRT protocol",
-    speaker: "For: Dr Mekhala Dwarakanath"
-  },
-  {
-    time: "4:35 - 4:50 PM",
-    session: "Against: Dr Swapna Yesisreddy",
-    speaker: "Against: Dr Swapna Yesisreddy"
-  },
-  {
-    time: "4:50 - 5:00 PM",
-    session: "Expert Comment",
-    speaker: "Dr Runa Acharya"
-  },
-  {
-    time: "5:00 - 5:20 PM",
-    session: "Greed for more oocytes: Are we justified?",
-    speaker: "Dr Sumana Gurunath"
-  },
-  {
-    time: "5:20 - 6:20 PM",
-    session: "Panel Discussion: Practical Management of poor responders",
-    speaker: "Moderator: Dr Ashwini G B, Dr Santosh Gupta"
-  },
-  {
-    time: "5:20 - 6:20 PM",
-    session: "Panelists: Dr Yogitha Rao, Dr Phani Madhuri, Dr Chaitra S K, Dr Savitha Mahesh, Dr Arnimish, Dr Aruna Kumar, Dr Sajja Padma, Dr Sindhuj, Dr Prashant Adiga.",
-    speaker: "Panelists: Dr Yogitha Rao, Dr Phani Madhuri, Dr Chaitra S K, Dr Savitha Mahesh, Dr Arnimish, Dr Aruna Kumar, Dr Sajja Padma, Dr Sindhuj, Dr Prashant Adiga."
-  },
-  {
-    time: "6:30 - 7:00 PM",
-    session: "Inauguration",
-    speaker: "Inauguration"
-  },
-  {
-    time: "7:00 - 7:30 PM",
-    session: "Dronacharya and young achievers award ceremony from ISAR",
-    speaker: "Dronacharya and young achievers award ceremony from ISAR"
-  },
-  {
-    time: "7:30 PM",
-    session: "CULTURAL PROGRAM FOLLOWED BY DINNER",
-    speaker: "CULTURAL PROGRAM FOLLOWED BY DINNER"
-  }
-];
+import React from "react";
+import "../App.css"; // Ensure you have this CSS file for custom styles
+import { Link } from "react-router-dom";
 
 const Page5 = () => {
   return (
     <div className="App">
-      <h1>Scientific Program</h1>
-      <h2>Hall 1</h2>
-      <h2>Day 3 - 28th July, 2024</h2>
-      <table>
+      <div className="nav-top">
+        <Link to="/4">
+          <button className="arrow-button">&larr;</button>
+        </Link>
+        <span className="nav-message">Use the arrows to switch between pages</span>
+        <Link to="/6">
+          <button className="arrow-button">&rarr;</button>
+        </Link>
+      </div>
+      <div className="header">
+        <h1>Scientific Program</h1>
+        <h2>Hall 1</h2>
+        <h2>Day 3 - 28th July, 2024</h2>
+      </div>
+      <table className="schedule-table">
         <thead>
           <tr>
             <th>Time</th>
@@ -189,30 +28,125 @@ const Page5 = () => {
           </tr>
         </thead>
         <tbody>
-          {scheduleDataDay.map((item, index) => (
-            <tr key={index}>
-              <td>{item.time}</td>
-              <td>{item.session}</td>
-              <td>{item.speaker}</td>
-            </tr>
-          ))}
+          <tr>
+            <td className="session-title">9:00 - 10:20 am</td>
+            <td className="session-title">Session 8 : Male Infertility - I</td>
+            <td className="session-title">Chairpersons: Dr Arif, Dr Vidyashree G Poojari.</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">9:00 - 9:20 am</td>
+            <td>Medical management of male infertility</td>
+            <td>Dr Vinod</td>
+          </tr>
+          <tr>
+            <td className="time-slot">9:40 - 10:00 am</td>
+            <td>Sperm retrieval surgeries in azoospermia </td>
+            <td>Dr Karthikeyen, Dr Arun Karthik</td>
+          </tr>
+          <tr>
+            <td className="time-slot">10:00 - 10:20 am</td>
+            <td>Discussion</td>
+            <td>Discussion</td>
+          </tr>
+          <tr>
+            <td className="session-title">10:20 - 11:40 am</td>
+            <td className="session-title">Session 9 : Male Infertility - II</td>
+            <td className="session-title">Chairpersons: Dr Bhavya Sunil, Dr Chaitra Naik</td>
+          </tr>
+          <tr>
+            <td className="time-slot">10:20 - 10:40 am</td>
+            <td>Can we improve surgical sperm extraction by
+              using endocrine stimulation protocol?</td>
+            <td>Dr Vasan S S</td>
+          </tr>
+          <tr>
+            <td className="time-slot">10:40 - 11:00 am</td>
+            <td>Role of sperm in embryogenesis: Clinical
+              perspective
+            </td>
+            <td>Dr M S Srinivas</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">11:00 - 11:15 am</td>
+            <td>Discussion</td>
+            <td>Discussion</td>
+          </tr>
+          <tr>
+            <td className="break" colSpan="3">
+              11:40 - 11:50 am am TEA BREAK
+            </td>
+          </tr>
+          <tr>
+            <td className="time-slot">11:30 - 12:15 pm</td>
+            <td>Plannery Session: Overian ageing: Defying
+              time, Defying the clock.
+
+            </td>
+            <td>Dr Nandita Palshetkar
+              Chairpersons: Dr Lavanya Kiran, Dr Anuradha
+              Khar, Dr Jyoti Budi</td>
+          </tr>
+
+          <tr>
+            <td className="session-title">12:35 - 1:30 pm</td>
+            <td className="session-title">Session 10: Endometriosis / Adenomyosis</td>
+            <td className="session-title">Chairpersons: Dr Bhavana Girish,
+              Dr Vidya Santosh
+            </td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">12:35 - 12:50 pm</td>
+            <td>Role of USG/MRI in endometriosis
+            </td>
+            <td>Dr Supriya Sheshadri</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">12:50 - 1:05 pm</td>
+            <td>Adenomyosis: Surgical/Medical option and
+              outcome
+            </td>
+            <td>Dr Kavitha CH</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">1:05 - 1:20 pm</td>
+            <td>Keynote address: Critical analysis of fertility
+              enhancing surgeries
+            </td>
+            <td>Dr Ramesh B</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">1:20 - 1:30 pm</td>
+            <td>Discussion
+            </td>
+            <td>Discussion</td>
+          </tr>
+          <tr>
+            <td className="break" colSpan="3">
+              1:30 - 1:45 pm VALEDICTORY FUNCTION
+            </td>
+          </tr>
+          <tr>
+            <td className="break" colSpan="3">
+              1:45 PM LUNCH
+            </td>
+          </tr>
         </tbody>
       </table>
-      <div className="coordinators">
-        <p>Hall Coordinators: Dr. Yogitha Rao | Dr. Savita Keranahalli</p>
+      <div className="coordinators">Hall Coordinators : Dr. Sneha J | Dr. Smrithi D Nayak</div>
+      <div className="nav-btns">
+        <Link to="/3">
+          <button className="arrow-button">&larr;</button>
+        </Link>
+        <Link to="/5">
+          <button className="arrow-button">&rarr;</button>
+        </Link>
       </div>
-      <div className='nav-btns'>
-        <Link to='/4'>
-      <button>
-        &larr; {/* Left arrow */}
-      </button>
-      </Link>
-      <Link to='/6'>
-      <button>
-        &rarr; {/* Right arrow */}
-      </button>
-      </Link>
-    </div>
     </div>
   );
 };
