@@ -29,6 +29,11 @@ const Page1 = () => {
         </thead>
         <tbody>
           <tr>
+            <td className="time-slot">8:00 - 9:00 am</td>
+            <td className="workshop-title">Free Paper Presentation</td>
+            <td></td>
+          </tr>
+          <tr>
             <td className="time-slot">9:00 - 9:15 am</td>
             <td className="workshop-title">Introduction</td>
             <td>Dr Rashmi Yogish</td>
@@ -44,7 +49,7 @@ const Page1 = () => {
               Going back to basic-innate and adaptive immunity in reproductive
               system
             </td>
-            <td>Dr Adil Mohammed</td>
+            <td>Dr Aruna Ashok</td>
           </tr>
           <tr>
             <td className="time-slot">9:45 - 10:15 am</td>
@@ -103,7 +108,7 @@ const Page1 = () => {
           <tr>
             <th colSpan="3" className="session-title">
               Session 1: Fertility after 40 (Chairperson: Dr Sireesha Rani, Dr
-              Savitha)
+              Savitha,, Dr Maheshwari)
             </th>
           </tr>
           <tr>
@@ -210,7 +215,7 @@ const Page1 = () => {
           </tr>
         </tbody>
       </table>
-      <div className="coordinators">Hall Coordinators: Dr Amarnath, Dr Himani Dham</div>
+      <div className="coordinators">Hall Coordinators: Dr Anu Sadashiv B, Dr  Sangeetha M J, Dr . Prathiba Govindaiah</div>
       <div className="nav-btns">
         <Link to="/6">
           <button className="arrow-button">&larr;</button>

@@ -54,18 +54,13 @@ const Page3 = () => {
             <td>Dr Dhanabhagyam</td>
           </tr>
           <tr>
-            <td className="time-slot">10:15 - 10:45 am</td>
-            <td>Poor Ovarian Reserve - what all an embryologist should know?</td>
-            <td>Dr Krishna Chaitanya</td>
-          </tr>
-          <tr>
             <td className="time-slot">10:00 - 10:20 am</td>
             <td>Discussion</td>
             <td></td>
           </tr>
           <tr>
             <td className="break" colSpan="3">
-              11:15 - 11:30 am TEA BREAK
+              10:20 - 10:35 am TEA BREAK
             </td>
           </tr>
           <tr>
@@ -94,13 +89,18 @@ const Page3 = () => {
             <td>Dr Devika Gunasheela</td>
           </tr>
           <tr>
+            <td className="time-slot">11:55 - 12:00 pm</td>
+            <td>Discussion</td>
+            <td></td>
+          </tr>
+          <tr>
             <td className="time-slot">12:00 - 1:00 pm</td>
             <td colSpan={"2"}>ISAR Presidential Oration: "Tic-Toc Y: Cracking the Code of paternal ageing" Dr Ameet Patki
               Chairpersons: Dr Manjunath C S, Dr Nivedita Shetty, Dr Ashwini G B</td>
           </tr>
           <tr>
             <td className="break" colSpan="3">
-              1:30 to 2:15 pm LUNCH
+              1:00 to 1:40 pm LUNCH
             </td>
           </tr>
           <tr>
@@ -136,33 +136,18 @@ const Page3 = () => {
           </tr>
           <tr>
             <td className="time-slot">3:10 - 3:50 pm</td>
-            <td>Debate: Extensive hormonal monitoring of
-              IVF cycle increases outcomes</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td className="time-slot">3:10 - 3:25 pm</td>
-            <td>For
-            </td>
-            <td>Dr Rupa Rajashekhar</td>
-          </tr>
-          <tr>
-            <td className="time-slot">3:25 - 3:40 pm</td>
-            <td>Against</td>
-            <td>Dr Apoorva Pallam Reddy</td>
-          </tr>
-          <tr>
-            <td className="time-slot">3:40 - 3:50 pm</td>
-            <td>Expert Comment</td>
-            <td>Dr Prashant Joshi</td>
+            <td>Plannery Session: Overian ageing: Defying time, Defying
+              the clock.</td>
+            <td>Dr Nandita Palshetkar
+              Chairpersons: Dr Lavanya Kiran, Dr Anuradha Khar, Dr Jyoti Budi</td>
           </tr>
           <tr>
             <td className="time-slot">3:50 - 4:20 pm</td>
             <td>Keynote address: Clinical and Laboratory Parameters
-              affecting the euploidy rate</td>
+              affecting the euploidy rate
+            </td>
             <td>Dr Nivedita Shetty</td>
           </tr>
-
           <tr>
             <th colSpan="3" className="session-title">
               Session: 7: Dr Dwarakanath, Dr Rubeena Zainab
@@ -172,7 +157,7 @@ const Page3 = () => {
             <td className="time-slot">4:20 - 5:00 pm</td>
             <td>Debate: Natural/Modified natural FET protocol is better
               than HRT protocol</td>
-            <td>Dr Rama Raju</td>
+            <td></td>
           </tr>
           <tr>
             <td className="time-slot">4:20 - 4:35 pm</td>
@@ -186,7 +171,7 @@ const Page3 = () => {
             <td>Dr Swapna Yesireddy</td>
           </tr>
           <tr>
-            <td className="time-slot">4:35 - 4:50 pm </td>
+            <td className="time-slot">4:50- 5:00 pm </td>
             <td>Expert Comment</td>
             <td>Dr Runa Acharya</td>
           </tr>
@@ -205,14 +190,14 @@ const Page3 = () => {
           <tr>
             <td className="time-slot"></td>
             <td>Moderator:</td>
-            <td>Dr Ashwini G B, Dr Santosh Gupta</td>
+            <td>Dr Santosh Gupta, Dr Manjunath C S</td>
           </tr>
           <tr>
             <td className="time-slot"></td>
             <td>Panelists:</td>
             <td>Dr Yogitha Rao, Dr Phani Madhuri, Dr Chaitra S K, Dr
               Savitha Mahesh, Dr Animisha, Dr Aruna Kumari, Dr Sajja
-              Padma, Dr Sindhuja, Dr Prashant Adiga
+              Padma,  Dr Ashwin Rao, Dr Ashwini Sadasivan
             </td>
           </tr>
           <tr>

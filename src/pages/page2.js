@@ -29,6 +29,11 @@ const Page2 = () => {
         </thead>
         <tbody>
           <tr>
+            <td className="time-slot">8:00 - 9:00 am</td>
+            <td className="workshop-title">Free Paper Presentation</td>
+            <td></td>
+          </tr>
+          <tr>
             <td className="time-slot">9:00 - 9:15 am</td>
             <td>Introduction</td>
             <td>Dr Ashwini G B</td>
@@ -65,13 +70,14 @@ const Page2 = () => {
           </tr>
           <tr>
             <td className="time-slot">11:30 - 1:30 pm</td>
-            <td>SS-II (Chairpersons: Dr Rashmi Naik, Dr Nandishwar Patil)</td>
-            <td>Dr Vijayalakshmi Kurnool, Mr Hemanth Kumar</td>
+            <td>SS-II (Chairpersons-)</td>
+            <td>Dr Vijayalakshmi Kurnool, Mr Hemanth Kumar M A, Dr
+              Ambika V</td>
           </tr>
           <tr>
             <td className="time-slot">11:30 - 11:50 pm</td>
             <td>Microfluidics</td>
-            <td>Dr Keshav Malhotra</td>
+            <td>Dr Ashwini G B</td>
           </tr>
           <tr>
             <td className="time-slot">11:50 - 12:10 pm</td>
@@ -136,7 +142,7 @@ const Page2 = () => {
           </tr>
           <tr>
             <th colSpan="3" className="session-title">
-              Session 2: Embryo assessment (Chairpersons: Dr Sudha Padmashri, Dr Revathy Sadasivam)
+              Session 2: Embryo assessment (Chairpersons: Dr Vijaykumar C R, Dr Shiney Prem)
             </th>
           </tr>
           <tr>
