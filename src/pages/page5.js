@@ -29,13 +29,22 @@ const Page5 = () => {
         </thead>
         <tbody>
           <tr>
+            <td className="session-title">8:00 - 9:00 am</td>
+            <td className="session-title">Free Paper Presentation</td>
+            <td className="session-title"></td>
+          </tr>
+          <tr>
             <td className="session-title">9:00 - 10:20 am</td>
             <td className="session-title">Session 8 : Male Infertility - I</td>
             <td className="session-title">Chairpersons: Dr Arif, Dr Vidyashree G Poojari.</td>
           </tr>
-
           <tr>
             <td className="time-slot">9:00 - 9:20 am</td>
+            <td>Evaluation of male factor</td>
+            <td>Dr Rahul Reddy</td>
+          </tr>
+          <tr>
+            <td className="time-slot">9:20 - 9:40 am</td>
             <td>Medical management of male infertility</td>
             <td>Dr Vinod</td>
           </tr>
@@ -50,7 +59,24 @@ const Page5 = () => {
             <td>Discussion</td>
           </tr>
           <tr>
-            <td className="session-title">10:20 - 11:40 am</td>
+            <td className="time-slot">10:20 - 10:40 am</td>
+            <td>Can we improve surgical sperm extraction by
+              using endocrine stimulation protocol?</td>
+            <td>Dr Vasan S S</td>
+          </tr>
+          <tr>
+            <td className="time-slot">10:40 - 11:00 am</td>
+            <td>Role of sperm in embryogenesis: Clinical
+              perspective</td>
+            <td>Dr M S Srinivas</td>
+          </tr>
+          <tr>
+            <td className="time-slot">11:00 - 11:15 am</td>
+            <td>Discussion</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td className="session-title">10:40 - 11:00 am</td>
             <td className="session-title">Session 9 : Male Infertility - II</td>
             <td className="session-title">Chairpersons: Dr Bhavya Sunil, Dr Chaitra Naik</td>
           </tr>
@@ -67,7 +93,6 @@ const Page5 = () => {
             </td>
             <td>Dr M S Srinivas</td>
           </tr>
-
           <tr>
             <td className="time-slot">11:00 - 11:15 am</td>
             <td>Discussion</td>
@@ -75,56 +100,64 @@ const Page5 = () => {
           </tr>
           <tr>
             <td className="break" colSpan="3">
+              11:15 - 11:30 am TEA BREAK
+            </td>
+          </tr>
+          <tr>
+            <td className="break" colSpan="3">
               11:40 - 11:50 am am TEA BREAK
             </td>
           </tr>
           <tr>
-            <td className="time-slot">11:30 - 12:15 pm</td>
-            <td>Plannery Session: Overian ageing: Defying
-              time, Defying the clock.
+            <td className="time-slot">11:30 - 11:50 pm</td>
+            <td>Fertility specialist's less inclination towards
+              varicocele - is it justified?
 
             </td>
-            <td>Dr Nandita Palshetkar
-              Chairpersons: Dr Lavanya Kiran, Dr Anuradha
-              Khar, Dr Jyoti Budi</td>
+            <td>Dr Praveen Joshi</td>
           </tr>
 
           <tr>
-            <td className="session-title">12:35 - 1:30 pm</td>
-            <td className="session-title">Session 10: Endometriosis / Adenomyosis</td>
-            <td className="session-title">Chairpersons: Dr Bhavana Girish,
-              Dr Vidya Santosh
+            <td className="session-title">11:50 - 12:05 pm</td>
+            <td className="session-title">For</td>
+            <td className="session-title">Dr Vinutha
             </td>
           </tr>
 
           <tr>
-            <td className="time-slot">12:35 - 12:50 pm</td>
-            <td>Role of USG/MRI in endometriosis
-            </td>
+            <td className="time-slot">12:05 - 12:20 pm</td>
+            <td>Against</td>
+            <td>Dr Apoorva Pallam Reddy</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">12:20 - 12:30 pm</td>
+            <td>Expert Comment</td>
+            <td>Dr Prashant Joshi</td>
+          </tr>
+
+          <tr>
+            <td className="time-slot">12:30 - 12:45 pm</td>
+            <td>Role of USG/MRI in endometriosis</td>
             <td>Dr Supriya Sheshadri</td>
           </tr>
 
           <tr>
-            <td className="time-slot">12:50 - 1:05 pm</td>
+            <td className="time-slot">12: 45 -1:00 pm</td>
             <td>Adenomyosis: Surgical/Medical option and
-              outcome
-            </td>
-            <td>Dr Kavitha CH</td>
+              outcome</td>
+            <td>Dr Kavitha C H</td>
           </tr>
-
           <tr>
-            <td className="time-slot">1:05 - 1:20 pm</td>
+            <td className="time-slot">1:00 - 1:20 pm</td>
             <td>Keynote address: Critical analysis of fertility
-              enhancing surgeries
-            </td>
+              enhancing surgeries</td>
             <td>Dr Ramesh B</td>
           </tr>
-
           <tr>
             <td className="time-slot">1:20 - 1:30 pm</td>
-            <td>Discussion
-            </td>
             <td>Discussion</td>
+            <td></td>
           </tr>
           <tr>
             <td className="break" colSpan="3">

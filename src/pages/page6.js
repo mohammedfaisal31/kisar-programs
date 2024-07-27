@@ -29,6 +29,11 @@ const Page6 = () => {
         </thead>
         <tbody>
           <tr>
+            <td className="time-slot">8:00 - 9:00 am</td>
+            <td >Free Paper Presentation</td>
+            <td ></td>
+          </tr>
+          <tr>
             <td className="session-title">9:00 - 9:32 am</td>
             <td className="session-title">Session 7 :  Short Capsule-I (6+2 minutes)</td>
             <td className="session-title">Chairpersons: Dr Meeta Angadi, Dr Prabhu Patil.</td>
@@ -73,7 +78,7 @@ const Page6 = () => {
           </tr><tr>
             <td className="time-slot">10:05 - 10:20 am</td>
             <td>DOR and Management</td>
-            <td>Dr Navyashree M S</td>
+            <td>Dr Ashish Kale</td>
           </tr><tr>
             <td className="time-slot">10:20 - 10:35 am</td>
             <td>MAR in PCOS</td>
@@ -118,11 +123,22 @@ const Page6 = () => {
             </td>
           </tr>
           <tr>
-            <td className="time-slot">11:30 - 12:15 pm</td>
-            <td>Plannery Session :</td>
+            <td className="time-slot">11:30 -11:45 am</td>
+            <td>Oral Paper winner presentation (10+5 minuts)</td>
             <td></td>
           </tr>
-
+          <tr>
+            <td className="time-slot">11:45 - 12:00 pm</td>
+            <td>Oral Paper 1st Runner up presentation (10+5
+              minuts)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td className="time-slot">12:00 - 12:15 pm</td>
+            <td>Oral Paper 2nd Runner up presentation
+              (10+5 minuts)</td>
+            <td></td>
+          </tr>
           <tr>
             <td className="session-title">12:15 - 1:35 pm</td>
             <td className="session-title">Session 10 : Different Perspective </td>
